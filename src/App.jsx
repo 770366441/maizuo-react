@@ -5,7 +5,7 @@ import Assemble from './pages/Assemble/assemble'
 import Cinema from './pages/cinema/cinema'
 import Mine from './pages/mine/mine'
 import Movies from './pages/movies/movies'
-
+import './App.css'
 export default class App extends Component{
     render(){
         return (

@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+b,
+strong {
+  font-weight: normal;
+}
+a,
+u {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 16px;
+}
+i,
+em {
+  font-style: normal;
+}
+.tabs {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+}
+.tabs .tab {
+  flex: 1;
+  line-height: 49px;
+  text-align: center;
+}
+.tabs .active {
+  color: red;
+}

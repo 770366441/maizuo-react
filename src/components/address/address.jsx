@@ -1,4 +1,4 @@
-import {Component},react from 'react'
+import react,{Component} from 'react'
 import {Route} from 'react-router-dom'
 import Address from './G_address.jsx'
 
