@@ -1,12 +1,10 @@
 import React, {Component} from 'react'
 import { BrowserRouter, Route, NavLink as Link, Redirect, Switch  } from 'react-router-dom'
 
-import One from './pages/one/One'
-import Two from './pages/two/Two'
-import Three from './pages/three/Three'
-import Four from './pages/four/Four'
-
-import './App.css'
+import Assemble from './pages/Assemble/assemble'
+import Cinema from './pages/cinema/cinema'
+import Mine from './pages/mine/mine'
+import Movies from './pages/movies/movies'
 
 export default class App extends Component{
     render(){
@@ -17,27 +15,24 @@ export default class App extends Component{
                     <Switch>
                         <Route path="/" exact render={()=>{
                             //对'/'重定向
-                            return <Redirect to="/one"/>
+                            return <Redirect to="/movies"/>
                         }}/>
 
-                        <Route path="/one" component={One}/>
-                        <Route path="/two" component={Two}/>
-                        <Route path="/three" component={Three}/>
-                        <Route path="/four" component={Four}/>
-                        <Route render={()=>{
-                            //对'/'重定向
-                            return <Redirect to="/one"/>
-                        }}/>
+                        <Route path="/movies" component={Movies}/>
+                        <Route path="/cinema" component={Cinema}/>
+                        <Route path="/assemble" component={Assemble}/>
+                        <Route path="/mine" component={Mine}/>
+
                     </Switch>
 
                     
 
 
                     <nav className="tabs">
-                        <Link className="tab" to="/one">one</Link>
-                        <Link className="tab" to="/two">two</Link>
-                        <Link className="tab" to="/three">three</Link>
-                        <Link className="tab" to="/four">four</Link>
+                        <Link className="tab" to="/movies">电影</Link>
+                        <Link className="tab" to="/cinema">影院</Link>
+                        <Link className="tab" to="/assemble">优团</Link>
+                        <Link className="tab" to="/mine">我的</Link>
                     </nav>
                     
 
